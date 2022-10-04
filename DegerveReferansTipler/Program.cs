@@ -10,7 +10,7 @@ namespace DegerveReferansTipler
             //int, decimal, float, double, bool = Değer tipleri
             //array, class, interface = Referans tipleri
 
-
+            
 
         }
     }

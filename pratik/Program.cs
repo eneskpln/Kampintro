@@ -6,13 +6,7 @@ namespace pratik
     {
         static void Main(string[] args)
         {
-
-            for (int i = 0; i < 2142432; i++)
-            {
-                Console.WriteLine(i);
-            }
-            
-
+            Console.WriteLine("Hello World!");
         }
     }
 }
