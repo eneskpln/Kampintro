@@ -9,42 +9,53 @@ namespace Pratikk
             string yayin = "Türkiye İş Bankası Kültür Yayınları";
             string dosto = "Fyodor Mihayloviç Dostoyevski";
 
-
             Kitaplar kitap1 = new Kitaplar();
             kitap1.kitapAdi = "Kamelyalı Kadın";
             kitap1.Yazari = "Alexandre Dumas Fils";
             kitap1.sayfaSayisi = 238;
-            kitap1.Yayini = yayin;
+            kitap1.yayinEvi = yayin;
 
             Kitaplar kitap2 = new Kitaplar();
-            kitap2.kitapAdi = "Suç ve Ceza";
-            kitap2.Yazari = dosto;
-            kitap2.sayfaSayisi = 638;
-            kitap2.Yayini = yayin;
+            kitap2.kitapAdi = "Sefiller";
+            kitap2.Yazari = "Victor Hugo";
+            kitap2.sayfaSayisi = 338;
+            kitap2.yayinEvi = yayin;
 
             Kitaplar kitap3 = new Kitaplar();
-            kitap3.kitapAdi = "Sefiller";
-            kitap3.Yazari = "Victor Hugo";
-            kitap3.sayfaSayisi = 538;
-            kitap3.Yayini = yayin;
+            kitap3.kitapAdi = "Satranç";
+            kitap3.Yazari = "Stefan Zweig";
+            kitap3.sayfaSayisi = 98;
+            kitap3.yayinEvi = yayin;
 
             Kitaplar kitap4 = new Kitaplar();
-            kitap4.kitapAdi = "Öteki";
+            kitap4.kitapAdi = "Kumarbaz";
             kitap4.Yazari = dosto;
-            kitap4.sayfaSayisi = 238;
-            kitap4.Yayini = yayin;
+            kitap4.sayfaSayisi = 256;
+            kitap4.yayinEvi = yayin;
 
-            Kitaplar[] kitaps = new Kitaplar[] { kitap1, kitap2, kitap3, kitap4 };
+            Kitaplar kitap5 = new Kitaplar();
+            kitap5.kitapAdi = "Öteki";
+            kitap5.Yazari = dosto;
+            kitap5.sayfaSayisi = 289;
+            kitap5.yayinEvi = yayin;
 
-            foreach (var dongu in kitaps)
+            Kitaplar[] kitaps = new Kitaplar[] { kitap1, kitap2, kitap3, kitap4, kitap5 };
+
+            Console.WriteLine("-------Kitaplar-------");
+            Console.WriteLine(" ");
+
+            foreach (var donek in kitaps)
             {
-                Console.WriteLine("Kitap Adı: " + dongu.kitapAdi + "\n" + "Yazarı: " + dongu.Yazari + "\n" + "Sayfa Sayısı: " + dongu.sayfaSayisi + "\n" + "Yayınevi: " + dongu.Yayini);
+                Console.WriteLine("==> Kitap Adı: " + donek.kitapAdi + "\n" + "==> Yazarı: " + donek.Yazari + "\n" + "==> Sayfa Sayısı: " + donek.sayfaSayisi + "\n" + "==> Yayınevi: " + donek.yayinEvi);
                 Console.WriteLine("*");
             }
 
 
+
         }
     }
+
+
 
 
 
@@ -53,6 +64,6 @@ namespace Pratikk
         public string kitapAdi { get; set; }
         public string Yazari { get; set; }
         public int sayfaSayisi { get; set; }
-        public string Yayini { get; set; }
+        public string yayinEvi { get; set; }
     }
 }
